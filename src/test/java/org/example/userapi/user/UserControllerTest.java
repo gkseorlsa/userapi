@@ -51,7 +51,7 @@ class UserControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(input)))
                 .andExpect(status().isCreated())
-                .andExpect(jsonPath("$.name").value("이영희"));
+                .andExpect(jsonPath("$.name").value("이상한값"));
     }
 
 
